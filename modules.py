@@ -193,7 +193,7 @@ def _get_cosmo_from_ms(file):
 
             # Parse data based on current flag
             if "Surface area of cavity" in line:
-                area = float(line.split()[7])  # [au**2]
+                area = float(line.split()[6])  # [au**2]
             elif "Total Volume of cavity" in line:
                 volume = float(line.split()[6])  # [au**3]
             elif flag == "coordinate" and "$end" not in line:
